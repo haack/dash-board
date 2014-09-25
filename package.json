@@ -1,0 +1,9 @@
+{
+  "name": "dash-board",
+  "version": "0.0.1",
+  "description": "rpi control panel",
+  "dependencies": {
+    "express": "^4.9.4",
+    "socket.io": "^1.1.0"
+  }
+}

@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'socketio' ]
+2 info using npm@2.0.0
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 verbose cache add [ 'socketio', null ]
+6 verbose cache add spec="socketio" args=["socketio",null]
+7 verbose parsed spec { raw: 'socketio',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: 'socketio',
+7 verbose parsed spec   rawSpec: '',
+7 verbose parsed spec   spec: '*',
+7 verbose parsed spec   type: 'range' }
+8 verbose parsed spec { raw: 'socketio',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: 'socketio',
+8 verbose parsed spec   rawSpec: '',
+8 verbose parsed spec   spec: '*',
+8 verbose parsed spec   type: 'range' }
+9 verbose addNamed [ 'socketio', '*' ]
+10 verbose addNamed [ null, '*' ]
+11 silly lockFile 9e1d76dd-socketio socketio@*
+12 verbose lock socketio@* /Users/user/.npm/9e1d76dd-socketio.lock
+13 silly addNameRange { name: 'socketio', range: '*', hasData: false }
+14 verbose mapToRegistry name socketio
+15 verbose mapToRegistry uri https://registry.npmjs.org/socketio
+16 verbose request on initialization, where is /socketio
+17 verbose request after pass 1, where is /socketio
+18 verbose request url raw /socketio
+19 verbose request resolving registry [ 'https://registry.npmjs.org/', './socketio' ]
+20 verbose request after pass 2, where is https://registry.npmjs.org/socketio
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 00:06:00
+23 verbose request id fed484ba6785848e
+24 http request GET https://registry.npmjs.org/socketio
+25 http 404 https://registry.npmjs.org/socketio
+26 verbose headers { date: 'Tue, 23 Sep 2014 23:04:44 GMT',
+26 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'content-length': '52',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   'x-served-by': 'cache-lcy1123-LCY',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1411513484.134144,VS0,VE365',
+26 verbose headers   'keep-alive': 'timeout=10, max=50',
+26 verbose headers   connection: 'Keep-Alive' }
+27 silly registry.get cb [ 404,
+27 silly registry.get   { date: 'Tue, 23 Sep 2014 23:04:44 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '52',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-lcy1123-LCY',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1411513484.134144,VS0,VE365',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly lockFile 9e1d76dd-socketio socketio@*
+29 silly lockFile 9e1d76dd-socketio socketio@*
+30 verbose stack Error: 404 Not Found: socketio
+30 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:259:14)
+30 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+30 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+30 verbose stack     at Request.emit (events.js:98:17)
+30 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+30 verbose stack     at Request.emit (events.js:117:20)
+30 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+30 verbose stack     at IncomingMessage.emit (events.js:117:20)
+30 verbose stack     at _stream_readable.js:943:16
+30 verbose stack     at process._tickCallback (node.js:419:13)
+31 verbose statusCode 404
+32 verbose pkgid socketio
+33 verbose cwd /Users/user/dev/dash-board
+34 error Darwin 13.3.0
+35 error argv "node" "/usr/local/bin/npm" "install" "-g" "socketio"
+36 error node v0.10.32
+37 error npm  v2.0.0
+38 error code E404
+39 error 404 Not Found: socketio
+39 error 404
+39 error 404 'socketio' is not in the npm registry.
+39 error 404 You should bug the author to publish it (or use the name yourself!)
+39 error 404
+39 error 404 Note that you can also install from a
+39 error 404 tarball, folder, http url, or git url.
+40 verbose exit [ 1, true ]
