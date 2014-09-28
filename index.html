@@ -8,10 +8,8 @@
     <script src="/socket.io/socket.io.js"></script>
       <script>
         var socket = io();
-        alert();
         $('#submit').click(function() {
           socket.emit('message', $('#message').val());
-          alert();
         });
       </script> 
   </body>
