@@ -14,12 +14,20 @@ fs.readFile("pass.txt", "ascii", function(error, data) {
 		res.sendfile('index.html');
 	});
 
+	app.get('/jquery-md5', function(req, res){
+		res.sendfile('bower_components/jquery-md5/jquery.md5.js');
+	});
+
+	app.get('/jquery', function(req, res){
+		console.log("serving jquery");
+		res.sendfile('bower_components/jquery/dist/jquery.js');
+	});
+
 	io.on('connection', function(socket){
 		console.log('[INFO] user connected');
 		socket.on('message', function(data) {
-			var hash = crypto.createHash('md5').update(data).digest('hex');
-			console.log("\nHashed pass: " + hash + "\n");
-			if (hash === md5pass) {
+			console.log("\nHashed pass: " + data + "\n");
+			if (data === md5pass) {
 				console.log("[SUCCESS]");
 			} else {
 				console.log("[FAIL]");
