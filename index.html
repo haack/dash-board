@@ -1,18 +1,24 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+      
     <script src="/jquery"></script>
     <script src="/jquery-md5"></script>
+    <script src="/bootstrap.js"></script>
   </head>
   <body>
-    <input type="text" id="password"></input><input type="button" id="submit" value="submit"></input>
+    <div id="container">
+      <div id="box">
+        <span id="title">hey.</span><br />
+        <input type="password" id="login"></input><br />
+      </div>
+    </div>
+    
     <script src="/socket.io/socket.io.js"></script>
-      <script>
-        var socket = io();
-        $('#submit').click(function() {
-          socket.emit('message', $.md5($('#password').val()));
-          console.log($.md5($('#password').val()));
-        });
-      </script> 
+    <script src="/app.js"></script>
   </body>
 </html>
