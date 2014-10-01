@@ -31,6 +31,13 @@ fs.readFile("pass.txt", "ascii", function(error, data) {
 		res.sendfile('index.html');
 	});
 
+	app.get('/message', function(req, res) {
+		fs.readFile("messages.txt", function(error, data) {
+			var messages = data.toString().split("\n");
+			res.send(messages[Math.floor(Math.random()*messages.length)]);
+		});
+	});
+
 	app.get('/jquery-md5', function(req, res) {
 		res.sendfile('bower_components/jquery-md5/jquery.md5.js');
 	});
