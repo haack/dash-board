@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" ng-app="app">
   <head>
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link rel="stylesheet" type="text/css" href="/bootstrap.css">
@@ -8,12 +8,15 @@
       
     <script src="/jquery"></script>
     <script src="/jquery-md5"></script>
-    <script src="/bootstrap.js"></script>
+    <script src="/bootstrap"></script>
+    <script src="/angular"></script>
+    
   </head>
-  <body>
+
+  <body ng-controller="LoginController">
     <div id="container">
       <div id="box">
-        <span id="title">hey.</span><br />
+        <span id="title">{{hey}}</span><br />
         <input type="password" id="login"></input><br />
       </div>
     </div>

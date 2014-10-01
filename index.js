@@ -51,7 +51,15 @@ fs.readFile("pass.txt", "ascii", function(error, data) {
 		res.sendfile('bower_components/bootstrap/dist/css/bootstrap.min.css');
 	});
 
-	app.get('/bootstrap.js', function(req, res) {
+	app.get('/bootstrap', function(req, res) {
 		res.sendfile('bower_components/bootstrap/dist/js/bootstrap.min.js');
+	});
+
+	app.get('/angular', function(req, res) {
+		res.sendfile('bower_components/angular/angular.js');
+	});
+
+	app.get('/angular.min.js.map', function(req, res) {
+		res.sendfile('bower_components/angular/angular.min.js.map');
 	});
 });
